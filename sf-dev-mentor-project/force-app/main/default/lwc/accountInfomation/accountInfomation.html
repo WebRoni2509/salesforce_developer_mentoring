@@ -1,0 +1,41 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="action:add_contact" size="small" class="slds-m-right_small"></lightning-icon>
+            Account Information
+        </h3>
+
+        <div class="slds-p-around_small">
+            <h4 class="slds-text-heading_small slds-p-bottom_xx-small">User name</h4>
+            <p><lightning-formatted-text value="Captain Price" ></lightning-formatted-text></p>
+        </div>
+
+        <div class="slds-p-around_small">
+            <h4 class="slds-text-heading_small slds-p-bottom_xx-small">User phone</h4>
+            <p><lightning-formatted-phone value="+380981122334" ></lightning-formatted-phone></p>
+        </div>
+
+        <div class="slds-p-around_small">
+            <h4 class="slds-text-heading_small slds-p-bottom_xx-small">User website</h4>
+            <p>
+                <lightning-formatted-url 
+                    value="https://webroni2509.github.io/portfolio/portfolio.html" 
+                    tooltip="Use https://webroni2509.github.io/portfolio/portfolio.html" 
+                    label="User protfolio" 
+                    target="_blank" >
+                </lightning-formatted-url>
+            </p>
+        </div>
+
+        <div class="slds-p-around_small">   
+            <h4 class="slds-text-heading_small slds-p-bottom_xx-small">Shipping address</h4> 
+            <lightning-formatted-address
+                street="Shipping Street"
+                city="Sambir"
+                country="UA"
+                province="Lviv"
+                postal-code="81400"
+            ></lightning-formatted-address>
+        </div>
+    </lightning-card>
+</template>
